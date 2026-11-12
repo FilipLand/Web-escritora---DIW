@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 780">
+  <!-- Fondo nocturno y líneas luminosas que forman la constelación. -->
+  <defs>
+    <linearGradient id="night" x2="0" y2="1"><stop stop-color="#34483C"/><stop offset="1" stop-color="#BDE0BC"/></linearGradient>
+  </defs>
+  <rect width="600" height="780" fill="url(#night)"/>
+  <path d="m108 180 126 80 155-101 89 148-123 117-163-26-84-218" fill="none" stroke="#E3D15B" stroke-width="3"/>
+  <g fill="#FBFAF5">
+    <circle cx="108" cy="180" r="8"/><circle cx="234" cy="260" r="8"/><circle cx="389" cy="159" r="8"/>
+    <circle cx="478" cy="307" r="8"/><circle cx="355" cy="424" r="8"/><circle cx="192" cy="398" r="8"/>
+  </g>
+  <!-- Luna y siluetas de montañas en varios planos. -->
+  <circle cx="302" cy="313" r="87" fill="#E3D15B" opacity=".87"/>
+  <path d="M0 550 141 434l108 96 100-130 94 117 157-120v383H0z" fill="#708961"/>
+  <path d="M0 670c130-57 218 31 330-14s181-34 270 3v121H0z" fill="#34483C"/>
+  <!-- Rótulo de muestra que debe reemplazarse al introducir la portada definitiva. -->
+  <text x="300" y="725" text-anchor="middle" fill="#FBFAF5" font-family="Georgia,serif" font-size="27" letter-spacing="4">OBRA DE MUESTRA</text>
+</svg>

@@ -1,0 +1,88 @@
+<?php
+// Define los datos que la plantilla compartida usa para representar la página de inicio.
+$rutaBase = '';
+$paginaActual = 'inicio';
+$tituloPagina = 'Ester López Ramos | Escritora de fantasía juvenil';
+$descripcionPagina = 'Descubre las historias, libros, eventos y novedades de Ester López Ramos, escritora de fantasía juvenil.';
+$mostrarBanner = true;
+// Inserta la cabecera del sitio y la navegación principal antes del contenido.
+include __DIR__ . '/templates/cabezado.php';
+include __DIR__ . '/templates/menu.php';
+?>
+
+<main id="contenido">
+    <!-- Presenta la propuesta del sitio y enlaza al catálogo de libros. -->
+    <section class="intro section-wrap">
+        <div class="intro-copy">
+            <p class="eyebrow">Fantasía juvenil · 16–24 años</p>
+            <h1>Un lugar para perderse<br><span>entre mundos</span></h1>
+            <p class="lead">Historias de fantasía para quienes todavía creen que detrás de cada puerta puede comenzar una aventura.</p>
+            <a class="button button-dark" href="paginas/MisLibros.php">Explorar mis libros <span aria-hidden="true">→</span></a>
+        </div>
+        <a class="author-teaser" href="index.php" aria-label="Volver al inicio">
+            <img src="images/autora-editorial.svg" alt="Ilustración editorial provisional de la autora">
+            <span class="author-teaser-note">Ester López Ramos <span aria-hidden="true">⌂</span></span>
+        </a>
+    </section>
+
+    <!-- Muestra una selección de fichas de ejemplo que enlazan al catálogo completo. -->
+    <section class="featured section-wrap" aria-labelledby="destacados-title">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">Historias para descubrir</p>
+                <h2 id="destacados-title">Libros destacados</h2>
+            </div>
+            <a class="text-link" href="paginas/MisLibros.php">Ver todos los libros <span aria-hidden="true">→</span></a>
+        </div>
+        <p class="notice-inline">Las cubiertas y fichas que ves a continuación son ejemplos de diseño pendientes de sustituir por los datos reales de cada libro.</p>
+        <div class="book-grid book-grid-home">
+            <article class="book-card">
+                <img src="images/portada-niebla.svg" alt="Cubierta de muestra con una luna sobre un bosque">
+                <p class="book-category">Fantasía · Ficha de muestra</p>
+                <h3>Obra destacada 01</h3>
+                <a class="text-link" href="paginas/MisLibros.php">Descubrir la ficha <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="book-card">
+                <img src="images/portada-portal.svg" alt="Cubierta de muestra con un portal entre montañas">
+                <p class="book-category">Aventura · Ficha de muestra</p>
+                <h3>Obra destacada 02</h3>
+                <a class="text-link" href="paginas/MisLibros.php">Descubrir la ficha <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="book-card">
+                <img src="images/portada-constelacion.svg" alt="Cubierta de muestra con una constelación">
+                <p class="book-category">Fantasía juvenil · Ficha de muestra</p>
+                <h3>Obra destacada 03</h3>
+                <a class="text-link" href="paginas/MisLibros.php">Descubrir la ficha <span aria-hidden="true">→</span></a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Resume la biografía y dirige a la página Sobre mí. -->
+    <section class="home-about">
+        <div class="section-wrap home-about-inner">
+            <div class="home-about-image">
+                <img src="images/autora-editorial.svg" alt="Ilustración provisional de Ester López Ramos">
+                <span class="image-caption">Retrato ilustrado provisional</span>
+            </div>
+            <div class="home-about-copy">
+                <p class="eyebrow">Detrás de las historias</p>
+                <h2>Hola, soy Ester</h2>
+                <p>Escribo fantasía para adolescentes y jóvenes adultos. Me gusta crear mundos donde la magia, los secretos y las decisiones de sus protagonistas abren nuevas posibilidades.</p>
+                <p>En esta web puedes conocer mis libros, seguir la agenda y encontrar las novedades sobre mi trabajo.</p>
+                <a class="button button-outline" href="paginas/SobreMi.php">Un poco más sobre mí <span aria-hidden="true">→</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cierra la página con una llamada directa a la página de contacto. -->
+    <section class="home-contact section-wrap">
+        <div>
+            <p class="eyebrow">¿Hablamos?</p>
+            <h2>Una pregunta, una propuesta<br>o una historia que compartir.</h2>
+        </div>
+        <a class="button button-dark" href="paginas/Contacto.php">Escríbeme <span aria-hidden="true">→</span></a>
+    </section>
+</main>
+
+<!-- Añade el pie de página común y cierra el documento HTML. -->
+<?php include __DIR__ . '/templates/piePagina.php'; ?>
