@@ -29,7 +29,7 @@ html {
 body {
     margin: 0;
     color: var(--ink);
-    background: var(--paper);
+    background: var(--mint);
     font-family: var(--sans);
     font-size: 15px;
     line-height: 1.7;
@@ -506,6 +506,60 @@ h3 {
     padding-bottom: 120px;
 }
 
+.story-pillars {
+    padding-bottom: 120px;
+}
+
+.story-pillars-intro {
+    max-width: 700px;
+    margin-bottom: 28px;
+    color: #475347;
+    font-size: 0.9rem;
+}
+
+.story-pillar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.story-pillar {
+    min-height: 220px;
+    padding: 25px;
+    border-top: 5px solid var(--green);
+    background: var(--lime);
+}
+
+.story-pillar:nth-child(2) {
+    border-top-color: var(--lime);
+    background: var(--yellow);
+}
+
+.story-pillar:nth-child(3) {
+    border-top-color: var(--yellow);
+    background: var(--green);
+}
+
+.story-pillar-number {
+    display: block;
+    margin-bottom: 27px;
+    color: #394536;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.story-pillar h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.story-pillar p {
+    margin-bottom: 0;
+    color: #394536;
+    font-size: 0.78rem;
+}
+
 .book-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -535,7 +589,7 @@ h3 {
 
 .home-about {
     padding: 88px 0;
-    background: var(--mint);
+    background: var(--lime);
 }
 
 .home-about-inner {
@@ -1248,8 +1302,8 @@ h3 {
 /* Pie del sitio con columnas de enlaces y franja inferior. */
 .site-footer {
     padding: 62px max(32px, calc((100% - var(--content-width)) / 2)) 0;
-    background: var(--ink);
-    color: #F5F5E9;
+    background: var(--green);
+    color: var(--ink);
 }
 
 .footer-main {
@@ -1263,7 +1317,7 @@ h3 {
     display: inline-flex;
     align-items: center;
     gap: 11px;
-    color: var(--white);
+    color: var(--ink);
     font-family: var(--serif);
     font-size: 0.9rem;
     font-weight: 700;
@@ -1280,12 +1334,12 @@ h3 {
 .footer-about > p {
     max-width: 270px;
     margin: 16px 0;
-    color: #C6CEC0;
+    color: #394536;
     font-size: 0.71rem;
 }
 
 .footer-email {
-    color: var(--lime);
+    color: #334A22;
     font-size: 0.73rem;
     text-underline-offset: 3px;
 }
@@ -1299,7 +1353,7 @@ h3 {
 
 .footer-column h2 {
     margin-bottom: 10px;
-    color: var(--mint);
+    color: var(--ink);
     font-family: var(--sans);
     font-size: 0.68rem;
     font-weight: 700;
@@ -1308,7 +1362,7 @@ h3 {
 }
 
 .footer-column a {
-    color: #E3E8DC;
+    color: var(--ink);
     font-size: 0.68rem;
     line-height: 1.55;
     text-decoration: none;
@@ -1316,14 +1370,14 @@ h3 {
 
 .footer-column a:hover,
 .footer-bottom a:hover {
-    color: var(--lime);
+    color: #334A22;
     text-decoration: underline;
     text-underline-offset: 3px;
 }
 
 .footer-column p {
     margin: 16px 0 0;
-    color: #C6CEC0;
+    color: #394536;
     font-size: 0.66rem;
 }
 
@@ -1333,13 +1387,13 @@ h3 {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.18);
-    color: #C6CEC0;
+    border-top: 1px solid rgba(32, 40, 32, 0.24);
+    color: #394536;
     font-size: 0.62rem;
 }
 
 .footer-bottom a {
-    color: #E3E8DC;
+    color: var(--ink);
     text-decoration: none;
 }
 
@@ -1387,6 +1441,10 @@ h3 {
 
     .footer-domain {
         grid-column: 2 / 4;
+    }
+
+    .story-pillar-grid {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -1579,6 +1637,24 @@ h3 {
 
     .featured {
         padding-bottom: 76px;
+    }
+
+    .story-pillars {
+        padding-bottom: 76px;
+    }
+
+    .story-pillar-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .story-pillar {
+        min-height: 0;
+        padding: 21px;
+    }
+
+    .story-pillar-number {
+        margin-bottom: 18px;
     }
 
     .book-grid {

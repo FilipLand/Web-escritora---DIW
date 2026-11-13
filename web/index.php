@@ -57,6 +57,33 @@ include __DIR__ . '/templates/menu.php';
         </div>
     </section>
 
+    <section class="story-pillars section-wrap" aria-labelledby="story-pillars-title">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">Una invitación a imaginar</p>
+                <h2 id="story-pillars-title">¿Qué encontrarás entre estas páginas?</h2>
+            </div>
+        </div>
+        <p class="story-pillars-intro">La fantasía es una puerta: al otro lado esperan lugares desconocidos, preguntas difíciles y personajes que deben elegir su propio camino.</p>
+        <div class="story-pillar-grid">
+            <article class="story-pillar">
+                <span class="story-pillar-number">01 · EXPLORAR</span>
+                <h3>Mundos por descubrir</h3>
+                <p>Escenarios imaginarios donde cada rincón puede esconder una pista, un secreto o el comienzo de una aventura.</p>
+            </article>
+            <article class="story-pillar">
+                <span class="story-pillar-number">02 · DECIDIR</span>
+                <h3>Personajes que eligen</h3>
+                <p>Protagonistas que se enfrentan a dudas y decisiones, y encuentran su voz mientras avanzan.</p>
+            </article>
+            <article class="story-pillar">
+                <span class="story-pillar-number">03 · SENTIR</span>
+                <h3>Historias que acompañan</h3>
+                <p>Lecturas de fantasía juvenil para dejarse llevar por la magia y seguir pensando en la historia al cerrar el libro.</p>
+            </article>
+        </div>
+    </section>
+
     <!-- Resume la biografía y dirige a la página Sobre mí. -->
     <section class="home-about">
         <div class="section-wrap home-about-inner">
