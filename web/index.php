@@ -20,7 +20,7 @@ include __DIR__ . '/templates/menu.php';
             <a class="button button-dark" href="paginas/MisLibros.php">Explorar mis libros <span aria-hidden="true">→</span></a>
         </div>
         <a class="author-teaser" href="index.php" aria-label="Volver al inicio">
-            <img src="images/autora-editorial.svg" alt="Ilustración editorial provisional de la autora">
+            <img src="images/autora-escritora.png" alt="Ilustración de Ester López Ramos escribiendo en su escritorio">
             <span class="author-teaser-note">Ester López Ramos <span aria-hidden="true">⌂</span></span>
         </a>
     </section>
@@ -37,21 +37,21 @@ include __DIR__ . '/templates/menu.php';
         <p class="notice-inline">Las cubiertas y fichas que ves a continuación son ejemplos de diseño pendientes de sustituir por los datos reales de cada libro.</p>
         <div class="book-grid book-grid-home">
             <article class="book-card">
-                <img src="images/portada-niebla.svg" alt="Cubierta de muestra con una luna sobre un bosque">
-                <p class="book-category">Fantasía · Ficha de muestra</p>
-                <h3>Obra destacada 01</h3>
+                <img src="images/portada-bosque-niebla.png" alt="Cubierta de muestra de El bosque de la niebla">
+                <p class="book-category">Fantasía · Juvenil · Ficha de muestra</p>
+                <h3>El bosque de la niebla</h3>
                 <a class="text-link" href="paginas/MisLibros.php">Descubrir la ficha <span aria-hidden="true">→</span></a>
             </article>
             <article class="book-card">
-                <img src="images/portada-portal.svg" alt="Cubierta de muestra con un portal entre montañas">
-                <p class="book-category">Aventura · Ficha de muestra</p>
-                <h3>Obra destacada 02</h3>
+                <img src="images/portada-puerta-montanas.png" alt="Cubierta de muestra de La puerta de las montañas">
+                <p class="book-category">Fantasía · Sobrenatural · Ficha de muestra</p>
+                <h3>La puerta de las montañas</h3>
                 <a class="text-link" href="paginas/MisLibros.php">Descubrir la ficha <span aria-hidden="true">→</span></a>
             </article>
             <article class="book-card">
-                <img src="images/portada-constelacion.svg" alt="Cubierta de muestra con una constelación">
-                <p class="book-category">Fantasía juvenil · Ficha de muestra</p>
-                <h3>Obra destacada 03</h3>
+                <img src="images/portada-mapa-estrellas.png" alt="Cubierta de muestra de El mapa de las estrellas">
+                <p class="book-category">Misterio · Juvenil · Ficha de muestra</p>
+                <h3>El mapa de las estrellas</h3>
                 <a class="text-link" href="paginas/MisLibros.php">Descubrir la ficha <span aria-hidden="true">→</span></a>
             </article>
         </div>
@@ -83,13 +83,14 @@ include __DIR__ . '/templates/menu.php';
             </article>
         </div>
     </section>
+</br>
 
     <!-- Resume la biografía y dirige a la página Sobre mí. -->
     <section class="home-about">
         <div class="section-wrap home-about-inner">
             <div class="home-about-image">
-                <img src="images/autora-editorial.svg" alt="Ilustración provisional de Ester López Ramos">
-                <span class="image-caption">Retrato ilustrado provisional</span>
+                <img src="images/autora-escritora.png" alt="Ilustración de Ester López Ramos escribiendo en su escritorio">
+                <span class="image-caption">Retrato ilustrado de Ester en su escritorio</span>
             </div>
             <div class="home-about-copy">
                 <p class="eyebrow">Detrás de las historias</p>

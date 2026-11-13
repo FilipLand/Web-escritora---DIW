@@ -2,11 +2,8 @@
 // Define valores de respaldo para poder reutilizar la navegación desde distintas páginas.
 $rutaBase = $rutaBase ?? '';
 $paginaActual = $paginaActual ?? '';
-// La página del catálogo omite el enlace "Inicio" porque ya tiene un enlace de regreso propio.
-$esMisLibros = $paginaActual === 'libros';
 // Cada entrada asocia una clave de página con el texto y su URL correspondiente.
 $navegacion = [
-    'inicio' => ['Inicio', $rutaBase . 'index.php'],
     'libros' => ['Mis libros', $rutaBase . 'paginas/MisLibros.php'],
     'contacto' => ['Contacto', $rutaBase . 'paginas/Contacto.php'],
     'sobre-mi' => ['Sobre mí', $rutaBase . 'paginas/SobreMi.php'],
@@ -30,7 +27,6 @@ $navegacion = [
     <div class="nav-content" id="primary-links">
         <ul class="nav-links">
             <?php foreach ($navegacion as $clave => $elemento): ?>
-                <?php if ($esMisLibros && $clave === 'inicio') { continue; } ?>
                 <li>
                     <a href="<?= htmlspecialchars($elemento[1], ENT_QUOTES, 'UTF-8') ?>"
                        <?= $paginaActual === $clave ? 'aria-current="page"' : '' ?>>

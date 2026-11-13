@@ -21,8 +21,8 @@ include __DIR__ . '/../templates/menu.php';
     <!-- Perfil biográfico con retrato ilustrado provisional y enlace al catálogo. -->
     <section class="about-profile section-wrap">
         <a class="about-portrait" href="../index.php" aria-label="Volver al inicio">
-            <img src="../images/autora-editorial.svg" alt="Ilustración editorial provisional de Ester López Ramos">
-            <span class="image-caption">Retrato ilustrado provisional · pulsa para volver al inicio</span>
+            <img src="../images/autora-escritora.png" alt="Ilustración de Ester López Ramos escribiendo en su escritorio">
+            <span class="image-caption">Retrato ilustrado · pulsa para volver al inicio</span>
         </a>
         <div class="about-copy">
             <p class="eyebrow">Hola, soy Ester</p>
@@ -44,9 +44,9 @@ include __DIR__ . '/../templates/menu.php';
             <p class="muted-copy">Ilustraciones de muestra pendientes de sustituir por fotografías reales.</p>
         </div>
         <div class="gallery-grid">
-            <figure class="gallery-tall"><img src="../images/autora-editorial.svg" alt="Ilustración editorial de muestra"></figure>
-            <figure><img src="../images/portada-niebla.svg" alt="Ilustración de muestra de un bosque fantástico"></figure>
-            <figure><img src="../images/portada-portal.svg" alt="Ilustración de muestra de un portal fantástico"></figure>
+            <figure class="gallery-tall"><img src="../images/autora-escritora.png" alt="Ilustración de una escritora leyendo y tomando notas"></figure>
+            <figure><img src="../images/portada-bosque-niebla.png" alt="Cubierta de muestra de un bosque fantástico"></figure>
+            <figure><img src="../images/portada-puerta-montanas.png" alt="Cubierta de muestra de un portal entre montañas"></figure>
         </div>
     </section>
 </main>

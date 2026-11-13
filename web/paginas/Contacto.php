@@ -32,8 +32,8 @@ $estado = isset($_GET['estado']) ? (string) $_GET['estado'] : '';
     <section class="contact-layout section-wrap">
         <div class="contact-profile">
             <a class="contact-portrait" href="../index.php" aria-label="Volver al inicio">
-                <img src="../images/autora-editorial.svg" alt="Ilustración editorial provisional de Ester López Ramos">
-                <span class="image-caption">Ilustración provisional · pulsa para volver al inicio</span>
+                <img src="../images/autora-escritora.png" alt="Ilustración de Ester López Ramos escribiendo en su escritorio">
+                <span class="image-caption">Ilustración · pulsa para volver al inicio</span>
             </a>
             <h2>Ester López Ramos</h2>
             <p>Escritora de fantasía juvenil</p>

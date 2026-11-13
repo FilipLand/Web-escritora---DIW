@@ -8,31 +8,76 @@ $mostrarBanner = false;
 // Datos provisionales que alimentan tanto las tarjetas como sus atributos de filtrado.
 $libros = [
     [
-        'titulo' => 'Obra de muestra 01',
+        'titulo' => 'El bosque de la niebla',
         'generos' => ['Fantasía', 'Juvenil', 'Novela'],
         'edad' => '16-24',
         'longitud' => 'Novela',
         'editorial' => 'Por confirmar',
-        'imagen' => 'portada-niebla.svg',
-        'descripcion' => 'Ficha de ejemplo para mostrar el diseño del catálogo. Sustituye estos datos por la información editorial confirmada.',
+        'imagen' => 'portada-bosque-niebla.png',
+        'descripcion' => 'Una joven sigue las luces de un bosque cubierto por la niebla y descubre que cada sendero guarda un recuerdo ajeno.',
     ],
     [
-        'titulo' => 'Obra de muestra 02',
+        'titulo' => 'La puerta de las montañas',
         'generos' => ['Fantasía', 'Novela', 'Sobrenatural'],
         'edad' => '16-24',
         'longitud' => 'Novela',
         'editorial' => 'Por confirmar',
-        'imagen' => 'portada-portal.svg',
-        'descripcion' => 'Ficha provisional. Aquí podrás contar de qué trata el libro y qué encontrará el lector en sus páginas.',
+        'imagen' => 'portada-puerta-montanas.png',
+        'descripcion' => 'Tras un paso oculto entre las cumbres, dos amigos encuentran un reino que solo aparece al caer la noche.',
     ],
     [
-        'titulo' => 'Obra de muestra 03',
+        'titulo' => 'El mapa de las estrellas',
         'generos' => ['Misterio', 'Ficción', 'Juvenil', 'Novela'],
         'edad' => '16-24',
         'longitud' => 'Novela corta',
         'editorial' => 'Por confirmar',
-        'imagen' => 'portada-constelacion.svg',
-        'descripcion' => 'Ejemplo de ficha sin datos de venta: esta web presenta las obras y no vende libros.',
+        'imagen' => 'portada-mapa-estrellas.png',
+        'descripcion' => 'Un mapa celeste cambia cada noche y señala lugares relacionados con la desaparición de una antigua astrónoma.',
+    ],
+    [
+        'titulo' => 'El jardín que recuerda',
+        'generos' => ['Fantasía', 'Misterio', 'Novela'],
+        'edad' => '16-24',
+        'longitud' => 'Novela',
+        'editorial' => 'Por confirmar',
+        'imagen' => 'portada-jardin-recuerda.png',
+        'descripcion' => 'En un jardín abandonado, las flores revelan fragmentos de una historia que nadie en el pueblo quiere contar.',
+    ],
+    [
+        'titulo' => 'Cartas desde la luna azul',
+        'generos' => ['Fantasía', 'Juvenil', 'Ficción'],
+        'edad' => '16-24',
+        'longitud' => 'Novela',
+        'editorial' => 'Por confirmar',
+        'imagen' => 'portada-cartas-luna.png',
+        'descripcion' => 'Una serie de cartas llega desde una ciudad imposible que, según los libros, nunca existió.',
+    ],
+    [
+        'titulo' => 'La ciudad bajo el lago',
+        'generos' => ['Misterio', 'Ficción', 'Sobrenatural'],
+        'edad' => '16-24',
+        'longitud' => 'Novela',
+        'editorial' => 'Por confirmar',
+        'imagen' => 'portada-ciudad-lago.png',
+        'descripcion' => 'Cuando baja el nivel del agua, aparecen las torres de una ciudad sumergida y una puerta todavía iluminada.',
+    ],
+    [
+        'titulo' => 'Las guardianas del invierno',
+        'generos' => ['Fantasía', 'Juvenil', 'Sobrenatural'],
+        'edad' => '16-24',
+        'longitud' => 'Novela',
+        'editorial' => 'Por confirmar',
+        'imagen' => 'portada-guardianas-invierno.png',
+        'descripcion' => 'Tres aprendices deben proteger la última llama del valle antes de que llegue una noche sin amanecer.',
+    ],
+    [
+        'titulo' => 'El faro de las últimas mareas',
+        'generos' => ['Fantasía', 'Misterio', 'Novela'],
+        'edad' => '16-24',
+        'longitud' => 'Novela corta',
+        'editorial' => 'Por confirmar',
+        'imagen' => 'portada-faro-mareas.png',
+        'descripcion' => 'Cada noche, un faro apagado dibuja una ruta distinta sobre el mar y alguien responde desde la niebla.',
     ],
 ];
 // Opciones disponibles en el filtro por género; deben mantenerse coherentes con las fichas.
@@ -46,7 +91,7 @@ include __DIR__ . '/../templates/menu.php';
     <!-- Identidad compacta de la autora y enlace de regreso al inicio. -->
     <div class="catalog-author section-wrap">
         <a href="../index.php" aria-label="Volver al inicio">
-            <img src="../images/autora-editorial.svg" alt="Ilustración provisional de Ester López Ramos">
+            <img src="../images/autora-escritora.png" alt="Ilustración de Ester López Ramos escribiendo en su escritorio">
         </a>
         <p><strong>Ester López Ramos</strong><span>Escritora de fantasía juvenil</span></p>
         <a class="text-link" href="../index.php">Inicio <span aria-hidden="true">→</span></a>
@@ -119,7 +164,7 @@ include __DIR__ . '/../templates/menu.php';
                              data-length="<?= htmlspecialchars($libro['longitud'], ENT_QUOTES, 'UTF-8') ?>"
                              data-publisher="<?= htmlspecialchars($libro['editorial'], ENT_QUOTES, 'UTF-8') ?>">
                         <div class="catalog-cover">
-                            <img src="../images/<?= htmlspecialchars($libro['imagen'], ENT_QUOTES, 'UTF-8') ?>" alt="Cubierta ilustrativa de <?= htmlspecialchars($libro['titulo'], ENT_QUOTES, 'UTF-8') ?>">
+                            <img src="../images/<?= htmlspecialchars($libro['imagen'], ENT_QUOTES, 'UTF-8') ?>" alt="Cubierta de muestra de <?= htmlspecialchars($libro['titulo'], ENT_QUOTES, 'UTF-8') ?>">
                         </div>
                         <div class="catalog-book-copy">
                             <p class="book-category"><?= htmlspecialchars(implode(' · ', $libro['generos']), ENT_QUOTES, 'UTF-8') ?></p>
