@@ -41,7 +41,6 @@ include __DIR__ . '/../templates/menu.php';
                 <p class="eyebrow">Un vistazo a mi universo</p>
                 <h2>Imágenes destacadas</h2>
             </div>
-            <p class="muted-copy">Ilustraciones de muestra pendientes de sustituir por fotografías reales.</p>
         </div>
         <div class="gallery-grid">
             <figure class="gallery-tall"><img src="../images/autora-escritora.png" alt="Ilustración de una escritora leyendo y tomando notas"></figure>
