@@ -3,7 +3,8 @@
 $rutaBase = '../';
 $paginaActual = 'libros';
 $tituloPagina = 'Mis libros | Ester López Ramos';
-$descripcionPagina = 'Explora las fichas y géneros de los libros de fantasía juvenil de Ester López Ramos.';
+$descripcionPagina = 'Descubre las historias y fichas de fantasía juvenil de Ester López Ramos, con géneros y detalles de cada libro.';
+$urlCanonica = 'https://www.esterlibros.es/paginas/MisLibros.php';
 $mostrarBanner = false;
 // Datos provisionales que alimentan tanto las tarjetas como sus atributos de filtrado.
 $libros = [

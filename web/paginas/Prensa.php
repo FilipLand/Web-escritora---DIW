@@ -3,7 +3,9 @@
 $rutaBase = '../';
 $paginaActual = 'prensa';
 $tituloPagina = 'Prensa | Ester López Ramos';
-$descripcionPagina = 'Noticias, entrevistas y apariciones en prensa de Ester López Ramos.';
+$descripcionPagina = 'Noticias, entrevistas y apariciones de Ester López Ramos, escritora de fantasía juvenil.';
+$urlCanonica = 'https://www.esterlibros.es/paginas/Prensa.php';
+$robots = 'noindex,follow';
 $mostrarBanner = false;
 // Inserta las plantillas compartidas de cabecera y navegación.
 include __DIR__ . '/../templates/cabezado.php';

@@ -3,7 +3,9 @@
 $rutaBase = '../';
 $paginaActual = 'eventos';
 $tituloPagina = 'Eventos | Ester López Ramos';
-$descripcionPagina = 'Consulta la agenda de eventos y encuentros de Ester López Ramos.';
+$descripcionPagina = 'Consulta presentaciones, encuentros lectores, firmas y próximos eventos de Ester López Ramos.';
+$urlCanonica = 'https://www.esterlibros.es/paginas/Eventos.php';
+$robots = 'noindex,follow';
 $mostrarBanner = false;
 // Incluye los elementos compartidos por todas las páginas interiores.
 include __DIR__ . '/../templates/cabezado.php';

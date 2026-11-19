@@ -4,6 +4,7 @@ $rutaBase = '../';
 $paginaActual = 'legal';
 $tituloPagina = 'Aviso legal y términos | Ester López Ramos';
 $descripcionPagina = 'Aviso legal, privacidad, cookies, términos y accesibilidad de la web de Ester López Ramos.';
+$urlCanonica = 'https://www.esterlibros.es/paginas/AvisoLegal.php';
 $mostrarBanner = false;
 // Reutiliza la cabecera y la navegación comunes del sitio.
 include __DIR__ . '/../templates/cabezado.php';

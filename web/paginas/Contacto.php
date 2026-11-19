@@ -9,7 +9,8 @@ if (empty($_SESSION['contacto_csrf'])) {
 $rutaBase = '../';
 $paginaActual = 'contacto';
 $tituloPagina = 'Contacto | Ester López Ramos';
-$descripcionPagina = 'Contacta con Ester López Ramos, escritora de fantasía juvenil.';
+$descripcionPagina = 'Contacta con Ester López Ramos, escritora de fantasía juvenil, para consultas, propuestas de prensa y eventos.';
+$urlCanonica = 'https://www.esterlibros.es/paginas/Contacto.php';
 $mostrarBanner = false;
 // Reutiliza las plantillas comunes de cabecera y navegación.
 include __DIR__ . '/../templates/cabezado.php';

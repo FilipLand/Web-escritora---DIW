@@ -3,7 +3,8 @@
 $rutaBase = '../';
 $paginaActual = 'sobre-mi';
 $tituloPagina = 'Sobre mí | Ester López Ramos';
-$descripcionPagina = 'Conoce a Ester López Ramos, escritora de fantasía para adolescentes y jóvenes adultos.';
+$descripcionPagina = 'Conoce a Ester López Ramos, escritora de fantasía juvenil: su universo creativo y las historias que la inspiran.';
+$urlCanonica = 'https://www.esterlibros.es/paginas/SobreMi.php';
 $mostrarBanner = false;
 // Incluye el encabezado y la navegación comunes.
 include __DIR__ . '/../templates/cabezado.php';

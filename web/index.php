@@ -3,7 +3,30 @@
 $rutaBase = '';
 $paginaActual = 'inicio';
 $tituloPagina = 'Ester López Ramos | Escritora de fantasía juvenil';
-$descripcionPagina = 'Descubre las historias, libros, eventos y novedades de Ester López Ramos, escritora de fantasía juvenil.';
+$descripcionPagina = 'Web oficial de Ester López Ramos, escritora de fantasía juvenil. Descubre sus libros, conoce su universo creativo y consulta novedades.';
+$urlCanonica = 'https://www.esterlibros.es/';
+$datosEstructurados = [
+    '@context' => 'https://schema.org',
+    '@graph' => [
+        [
+            '@type' => 'WebSite',
+            '@id' => 'https://www.esterlibros.es/#website',
+            'url' => 'https://www.esterlibros.es/',
+            'name' => 'Ester López Ramos',
+            'inLanguage' => 'es-ES',
+            'publisher' => ['@id' => 'https://www.esterlibros.es/#person'],
+        ],
+        [
+            '@type' => 'Person',
+            '@id' => 'https://www.esterlibros.es/#person',
+            'name' => 'Ester López Ramos',
+            'url' => 'https://www.esterlibros.es/',
+            'image' => 'https://www.esterlibros.es/images/autora-escritora.png',
+            'jobTitle' => 'Escritora de fantasía juvenil',
+            'description' => 'Escritora de fantasía para adolescentes y jóvenes adultos.',
+        ],
+    ],
+];
 $mostrarBanner = true;
 // Inserta la cabecera del sitio y la navegación principal antes del contenido.
 include __DIR__ . '/templates/cabezado.php';
