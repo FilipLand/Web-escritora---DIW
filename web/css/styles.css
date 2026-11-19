@@ -1361,8 +1361,8 @@ h3 {
 .footer-brand img {
     width: 38px;
     height: 38px;
-    padding: 5px;
-    background: var(--mint);
+    padding: 0;
+    background: transparent;
 }
 
 .footer-about > p {
