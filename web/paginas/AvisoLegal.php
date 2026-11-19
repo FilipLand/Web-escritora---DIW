@@ -69,7 +69,8 @@ include __DIR__ . '/../templates/menu.php';
             <section id="cookies" class="legal-section">
                 <p class="eyebrow">E · Cookies</p>
                 <h2>Política de cookies</h2>
-                <p>La versión actual del sitio no incorpora herramientas de analítica ni cookies publicitarias. Si en el futuro se añaden cookies propias no esenciales o de terceros, se informará de su finalidad y se solicitará el consentimiento antes de activarlas, de acuerdo con la normativa aplicable.</p>
+                <p>Este sitio no utiliza cookies de analítica, publicidad ni seguimiento. Solo se crea una cookie técnica de sesión (PHPSESSID) cuando visitas el formulario de contacto. Es necesaria para proteger el formulario frente a envíos falsificados mediante un token de seguridad; no se usa para identificarte ni para elaborar perfiles.</p>
+                <p>La cookie es temporal, se limita a este sitio y se configura como HttpOnly y SameSite=Lax; cuando la web se visita mediante HTTPS también se marca como Secure. La sesión no se inicia en el resto de páginas. Al ser estrictamente necesaria para prestar y proteger el formulario, no se usan cookies opcionales ni se solicita consentimiento para ellas.</p>
                 <p>Los enlaces externos pueden aplicar sus propias políticas cuando los visites.</p>
             </section>
 

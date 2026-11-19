@@ -1,8 +1,6 @@
 <?php
-// Inicia o reutiliza la sesión para proteger el formulario con un token CSRF.
-if (session_status() !== PHP_SESSION_ACTIVE) {
-    session_start();
-}
+// Inicia la sesión técnica, necesaria únicamente para proteger el formulario con un token CSRF.
+require_once __DIR__ . '/../includes/sesion-contacto.php';
 // Genera un token aleatorio por sesión; el formulario lo enviará de vuelta al servidor.
 if (empty($_SESSION['contacto_csrf'])) {
     $_SESSION['contacto_csrf'] = bin2hex(random_bytes(32));

@@ -6,10 +6,8 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit('Método no permitido.');
 }
 
-// Recupera la sesión para validar el token CSRF recibido junto al formulario.
-if (session_status() !== PHP_SESSION_ACTIVE) {
-    session_start();
-}
+// Recupera la sesión técnica para validar el token CSRF recibido junto al formulario.
+require_once __DIR__ . '/includes/sesion-contacto.php';
 
 $tokenEnviado = isset($_POST['csrf_token']) ? (string) $_POST['csrf_token'] : '';
 $tokenSesion = isset($_SESSION['contacto_csrf']) ? (string) $_SESSION['contacto_csrf'] : '';
