@@ -20,7 +20,7 @@ include __DIR__ . '/../templates/menu.php';
     <!-- Identidad compacta de la autora y enlace de regreso al inicio. -->
     <div class="catalog-author section-wrap">
         <a href="../index.php" aria-label="Volver al inicio">
-            <img src="../images/autora-escritora.png" alt="Ilustración de Ester López Ramos escribiendo en su escritorio">
+            <img src="../images/autora-escritora.png" alt="Retrato de Ester López Ramos en una librería">
         </a>
         <p><strong>Ester López Ramos</strong><span>Escritora de fantasía juvenil</span></p>
         <a class="text-link" href="../index.php">Inicio <span aria-hidden="true">→</span></a>

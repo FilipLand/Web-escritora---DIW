@@ -27,12 +27,12 @@ $imagenSocial = $imagenSocial ?? 'https://www.esterlibros.es/images/autora-escri
     <meta property="og:description" content="<?= htmlspecialchars($descripcionPagina, ENT_QUOTES, 'UTF-8') ?>">
     <meta property="og:url" content="<?= htmlspecialchars($urlCanonica, ENT_QUOTES, 'UTF-8') ?>">
     <meta property="og:image" content="<?= htmlspecialchars($imagenSocial, ENT_QUOTES, 'UTF-8') ?>">
-    <meta property="og:image:alt" content="Ilustración de Ester López Ramos escribiendo en su escritorio">
+    <meta property="og:image:alt" content="Retrato de Ester López Ramos en una librería">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="<?= htmlspecialchars($tituloPagina, ENT_QUOTES, 'UTF-8') ?>">
     <meta name="twitter:description" content="<?= htmlspecialchars($descripcionPagina, ENT_QUOTES, 'UTF-8') ?>">
     <meta name="twitter:image" content="<?= htmlspecialchars($imagenSocial, ENT_QUOTES, 'UTF-8') ?>">
-    <meta name="twitter:image:alt" content="Ilustración de Ester López Ramos escribiendo en su escritorio">
+    <meta name="twitter:image:alt" content="Retrato de Ester López Ramos en una librería">
     <link rel="icon" href="<?= htmlspecialchars($rutaBase, ENT_QUOTES, 'UTF-8') ?>images/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +43,7 @@ $imagenSocial = $imagenSocial ?? 'https://www.esterlibros.es/images/autora-escri
         <script type="application/ld+json"><?= json_encode($datosEstructurados, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?></script>
     <?php endif; ?>
 </head>
-<body>
+<body class="<?= ($paginaActual ?? '') === 'inicio' ? 'home-page' : '' ?>">
     <!-- Enlace de accesibilidad que permite saltar directamente al contenido principal. -->
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
     <!-- El banner audiovisual solo aparece en las páginas que lo solicitan. -->

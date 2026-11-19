@@ -19,11 +19,11 @@ include __DIR__ . '/../templates/menu.php';
         <p class="lead">Unas palabras de Ester López Ramos y una mirada al universo creativo que acompaña sus historias.</p>
     </section>
 
-    <!-- Perfil biográfico con retrato ilustrado provisional y enlace al catálogo. -->
+    <!-- Perfil biográfico con retrato de la autora y enlace al catálogo. -->
     <section class="about-profile section-wrap">
         <a class="about-portrait" href="../index.php" aria-label="Volver al inicio">
-            <img src="../images/autora-escritora.png" alt="Ilustración de Ester López Ramos escribiendo en su escritorio">
-            <span class="image-caption">Retrato ilustrado · pulsa para volver al inicio</span>
+            <img src="../images/autora-escritora.png" alt="Retrato de Ester López Ramos en una librería">
+            <span class="image-caption">Retrato · pulsa para volver al inicio</span>
         </a>
         <div class="about-copy">
             <p class="eyebrow">Hola, soy Ester</p>
@@ -44,7 +44,7 @@ include __DIR__ . '/../templates/menu.php';
             </div>
         </div>
         <div class="gallery-grid">
-            <figure class="gallery-tall"><img src="../images/autora-escritora.png" alt="Ilustración de una escritora leyendo y tomando notas"></figure>
+            <figure class="gallery-tall"><img src="../images/autora-escritora.png" alt="Retrato de Ester López Ramos en una librería"></figure>
             <figure><img src="../images/portada-bosque-niebla.png" alt="Cubierta de muestra de un bosque fantástico"></figure>
             <figure><img src="../images/portada-puerta-montanas.png" alt="Cubierta de muestra de un portal entre montañas"></figure>
         </div>
