@@ -30,7 +30,7 @@ include __DIR__ . '/../templates/menu.php';
             <h2>Escribo para abrir puertas a otros mundos.</h2>
             <p>Soy Ester López Ramos y escribo fantasía para adolescentes y jóvenes adultos, especialmente para lectores de entre 16 y 24 años.</p>
             <p>Me interesan los mundos llenos de posibilidades, los personajes que se enfrentan a decisiones difíciles y las historias que nos acompañan mucho después de cerrar el libro.</p>
-            <p>Esta web reúne información sobre mis obras, mi agenda y las apariciones en prensa. La información biográfica adicional se completará cuando esté disponible.</p>
+            <p>Esta web reúne información sobre mis obras, mi agenda y las apariciones en prensa.</p>
             <a class="button button-dark" href="MisLibros.php">Conocer mis libros <span aria-hidden="true">→</span></a>
         </div>
     </section>

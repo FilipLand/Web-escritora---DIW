@@ -39,7 +39,7 @@ include __DIR__ . '/templates/menu.php';
         <div class="intro-copy">
             <p class="eyebrow"><span aria-hidden="true">✦</span> Fantasía juvenil · 16–24 años</p>
             <h1>La vida real<br>puede esperar.<br><span>Hay otros mundos.</span></h1>
-            <p class="lead">Magia, misterios y personajes que no tienen todas las respuestas. Encuentra una historia que te haga pasar página hasta tarde.</p>
+            <p class="lead">Magia, misterios y personajes que no tienen todas las respuestas. Encuentra una historia que te haga leer páginas hasta la tarde.</p>
             <div class="home-hero-actions">
                 <a class="button button-dark" href="paginas/MisLibros.php">Encuentra tu próxima historia <span aria-hidden="true">→</span></a>
                 <a class="text-link" href="paginas/SobreMi.php">Conoce a Ester <span aria-hidden="true">↗</span></a>

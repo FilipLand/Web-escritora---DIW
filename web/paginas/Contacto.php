@@ -39,7 +39,6 @@ $estado = isset($_GET['estado']) ? (string) $_GET['estado'] : '';
             <a class="contact-email" href="mailto:contacto@ester.com">contacto@ester.com <span aria-hidden="true">↗</span></a>
             <div class="social-block">
                 <h3>También en redes</h3>
-                <p class="social-note">Perfiles oficiales pendientes de confirmar. Estos enlaces llevan a las plataformas.</p>
                 <div class="social-links">
                     <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
                     <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook <span aria-hidden="true">↗</span></a>

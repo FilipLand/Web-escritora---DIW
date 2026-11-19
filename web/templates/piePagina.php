@@ -11,7 +11,7 @@ $rutaBase = $rutaBase ?? '';
                 <img src="<?= htmlspecialchars($rutaBase, ENT_QUOTES, 'UTF-8') ?>images/logo-ester.svg" alt="">
                 <span>Ester López Ramos</span>
             </a>
-            <p>Un espacio para descubrir historias de fantasía juvenil, novedades y próximos encuentros.</p>
+            <p>Un espacio para descubrir historias de fantasía juvenil, novedades y los próximos encuentros.</p>
             <a class="footer-email" href="mailto:contacto@ester.com">contacto@ester.com</a>
         </div>
         <!-- Enlaces de navegación agrupados por propósito. -->
@@ -34,7 +34,7 @@ $rutaBase = $rutaBase ?? '';
         </div>
         <div class="footer-column footer-domain">
             <h2>En línea</h2>
-            <a href="https://www.esterlibros.es/" target="_blank" rel="noopener noreferrer">EsterLibros.es <span aria-hidden="true">↗</span></a>
+            <a href="<?= htmlspecialchars($rutaBase, ENT_QUOTES, 'UTF-8') ?>index.php">EsterLibros.es</a>
             <p>© <?= date('Y') ?> Ester López Ramos.<br>Todos los derechos reservados.</p>
         </div>
     </div>
