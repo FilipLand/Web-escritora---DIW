@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 780">
+  <defs>
+    <linearGradient id="valley" x2="0" y2="1">
+      <stop stop-color="#d6e8df"/>
+      <stop offset="1" stop-color="#728f8e"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="780" fill="url(#valley)"/>
+  <circle cx="300" cy="380" r="118" fill="#f4e6a3" opacity=".76"/>
+  <path d="M0 540 103 357l87 133 114-218 115 225 82-148 99 167v244H0z" fill="#829e8c"/>
+  <path d="M0 612 150 456l115 144 128-179 105 165 102-94v219H0z" fill="#405e56"/>
+  <path d="m241 612 56-228 57 228z" fill="#c6ece0" stroke="#f6f2d9" stroke-width="7"/>
+  <path d="m269 612 28-228 29 228z" fill="#82b3a5"/>
+  <path d="M105 492q55-55 110 0t110 0 110 0 110 0" fill="none" stroke="#e9f4e7" stroke-width="8" opacity=".9"/>
+  <g fill="#f9f0c9">
+    <circle cx="134" cy="430" r="6"/><circle cx="457" cy="393" r="6"/>
+    <circle cx="208" cy="365" r="4"/><circle cx="385" cy="468" r="4"/>
+  </g>
+  <rect x="0" y="700" width="600" height="80" fill="#20352e" opacity=".94"/>
+  <rect x="12" y="12" width="576" height="756" fill="none" stroke="#f6f0dc" stroke-width="5"/>
+  <text x="44" y="55" fill="#263b33" font-family="Georgia,serif" font-size="16" letter-spacing="2">MISTERIO · FICHA DE MUESTRA</text>
+  <text x="44" y="132" fill="#263b33" font-family="Georgia,serif" font-size="34" font-weight="700">Las voces del</text>
+  <text x="44" y="175" fill="#263b33" font-family="Georgia,serif" font-size="34" font-weight="700">valle de cristal</text>
+  <text x="300" y="744" fill="#fff8e8" font-family="Georgia,serif" font-size="15" font-weight="700" letter-spacing="1" text-anchor="middle">ESTER LÓPEZ RAMOS · FICHA DE MUESTRA</text>
+</svg>

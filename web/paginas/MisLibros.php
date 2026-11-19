@@ -6,83 +6,11 @@ $tituloPagina = 'Mis libros | Ester López Ramos';
 $descripcionPagina = 'Descubre las historias y fichas de fantasía juvenil de Ester López Ramos, con géneros y detalles de cada libro.';
 $urlCanonica = 'https://www.esterlibros.es/paginas/MisLibros.php';
 $mostrarBanner = false;
-// Datos provisionales que alimentan tanto las tarjetas como sus atributos de filtrado.
-$libros = [
-    [
-        'titulo' => 'El bosque de la niebla',
-        'generos' => ['Fantasía', 'Juvenil', 'Novela'],
-        'edad' => '16-24',
-        'longitud' => 'Novela',
-        'editorial' => 'Por confirmar',
-        'imagen' => 'portada-bosque-niebla.png',
-        'descripcion' => 'Una joven sigue las luces de un bosque cubierto por la niebla y descubre que cada sendero guarda un recuerdo ajeno.',
-    ],
-    [
-        'titulo' => 'La puerta de las montañas',
-        'generos' => ['Fantasía', 'Novela', 'Sobrenatural'],
-        'edad' => '16-24',
-        'longitud' => 'Novela',
-        'editorial' => 'Por confirmar',
-        'imagen' => 'portada-puerta-montanas.png',
-        'descripcion' => 'Tras un paso oculto entre las cumbres, dos amigos encuentran un reino que solo aparece al caer la noche.',
-    ],
-    [
-        'titulo' => 'El mapa de las estrellas',
-        'generos' => ['Misterio', 'Ficción', 'Juvenil', 'Novela'],
-        'edad' => '16-24',
-        'longitud' => 'Novela corta',
-        'editorial' => 'Por confirmar',
-        'imagen' => 'portada-mapa-estrellas.png',
-        'descripcion' => 'Un mapa celeste cambia cada noche y señala lugares relacionados con la desaparición de una antigua astrónoma.',
-    ],
-    [
-        'titulo' => 'El jardín que recuerda',
-        'generos' => ['Fantasía', 'Misterio', 'Novela'],
-        'edad' => '16-24',
-        'longitud' => 'Novela',
-        'editorial' => 'Por confirmar',
-        'imagen' => 'portada-jardin-recuerda.png',
-        'descripcion' => 'En un jardín abandonado, las flores revelan fragmentos de una historia que nadie en el pueblo quiere contar.',
-    ],
-    [
-        'titulo' => 'Cartas desde la luna azul',
-        'generos' => ['Fantasía', 'Juvenil', 'Ficción'],
-        'edad' => '16-24',
-        'longitud' => 'Novela',
-        'editorial' => 'Por confirmar',
-        'imagen' => 'portada-cartas-luna.png',
-        'descripcion' => 'Una serie de cartas llega desde una ciudad imposible que, según los libros, nunca existió.',
-    ],
-    [
-        'titulo' => 'La ciudad bajo el lago',
-        'generos' => ['Misterio', 'Ficción', 'Sobrenatural'],
-        'edad' => '16-24',
-        'longitud' => 'Novela',
-        'editorial' => 'Por confirmar',
-        'imagen' => 'portada-ciudad-lago.png',
-        'descripcion' => 'Cuando baja el nivel del agua, aparecen las torres de una ciudad sumergida y una puerta todavía iluminada.',
-    ],
-    [
-        'titulo' => 'Las guardianas del invierno',
-        'generos' => ['Fantasía', 'Juvenil', 'Sobrenatural'],
-        'edad' => '16-24',
-        'longitud' => 'Novela',
-        'editorial' => 'Por confirmar',
-        'imagen' => 'portada-guardianas-invierno.png',
-        'descripcion' => 'Tres aprendices deben proteger la última llama del valle antes de que llegue una noche sin amanecer.',
-    ],
-    [
-        'titulo' => 'El faro de las últimas mareas',
-        'generos' => ['Fantasía', 'Misterio', 'Novela'],
-        'edad' => '16-24',
-        'longitud' => 'Novela corta',
-        'editorial' => 'Por confirmar',
-        'imagen' => 'portada-faro-mareas.png',
-        'descripcion' => 'Cada noche, un faro apagado dibuja una ruta distinta sobre el mar y alguien responde desde la niebla.',
-    ],
-];
+require_once __DIR__ . '/../datos.php';
 // Opciones disponibles en el filtro por género; deben mantenerse coherentes con las fichas.
 $generos = ['Fantasía', 'Misterio', 'Juvenil', 'Novela', 'Sobrenatural', 'Ficción'];
+// Deriva las opciones editoriales de las fichas para que los filtros siempre coincidan.
+$editoriales = array_values(array_unique(array_column($libros, 'editorial')));
 // Carga la estructura común de la página antes de mostrar el catálogo.
 include __DIR__ . '/../templates/cabezado.php';
 include __DIR__ . '/../templates/menu.php';
@@ -132,7 +60,9 @@ include __DIR__ . '/../templates/menu.php';
                 <label class="filter-label" for="filter-publisher">Editorial</label>
                 <select id="filter-publisher" data-filter-publisher>
                     <option value="">Todas</option>
-                    <option value="Por confirmar">Por confirmar</option>
+                    <?php foreach ($editoriales as $editorial): ?>
+                        <option value="<?= htmlspecialchars($editorial, ENT_QUOTES, 'UTF-8') ?>"><?= htmlspecialchars($editorial, ENT_QUOTES, 'UTF-8') ?></option>
+                    <?php endforeach; ?>
                 </select>
                 <button class="button button-outline filter-reset" type="button" data-filter-reset>Limpiar filtros</button>
             </div>
@@ -149,7 +79,7 @@ include __DIR__ . '/../templates/menu.php';
                 <label class="sr-only" for="catalog-search">Buscar por título o género</label>
                 <input id="catalog-search" type="search" placeholder="Buscar por título o género" data-filter-search>
             </div>
-            <p class="notice-inline">Fichas y cubiertas de muestra: los títulos, editoriales y descripciones deben reemplazarse por los datos reales antes de publicar.</p>
+            <p class="notice-inline">Fichas, títulos y cubiertas de muestra. Las cuatro editoriales son inventadas y se incluyen solo como ejemplo; no representan entidades reales.</p>
             <div class="catalog-list" data-catalog-list>
                 <!-- Convierte cada elemento de datos en una tarjeta con valores escapados. -->
                 <?php foreach ($libros as $indice => $libro): ?>

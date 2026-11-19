@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 780">
+  <defs>
+    <linearGradient id="atlas" x2="0" y2="1">
+      <stop stop-color="#e4d36a"/>
+      <stop offset="1" stop-color="#6b7652"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="780" fill="url(#atlas)"/>
+  <circle cx="462" cy="310" r="87" fill="#f7edc4" opacity=".7"/>
+  <path d="M0 570 111 390l104 139 105-201 120 202 86-135 74 111v194H0z" fill="#8b9b6b"/>
+  <path d="M0 624 146 490l124 126 116-137 112 124 102-95v231H0z" fill="#3c5447"/>
+  <path d="M210 640V440c0-86 42-143 90-143s90 57 90 143v200z" fill="#f0e8c5"/>
+  <path d="M234 640V447c0-62 30-105 66-105s66 43 66 105v193z" fill="#243d36"/>
+  <path d="M260 640V451c0-39 18-68 40-68s40 29 40 68v189z" fill="#a8d75c"/>
+  <path d="M90 328 151 267l61 61-61 61zM391 242l47-47 47 47-47 47z" fill="none" stroke="#f8f0d1" stroke-width="7"/>
+  <path d="M151 328q115-95 198-50M438 288q-23 80-87 119" fill="none" stroke="#f8f0d1" stroke-width="5" stroke-dasharray="8 12"/>
+  <rect x="0" y="700" width="600" height="80" fill="#1e3028" opacity=".94"/>
+  <rect x="12" y="12" width="576" height="756" fill="none" stroke="#f6f0dc" stroke-width="5"/>
+  <text x="44" y="55" fill="#28372c" font-family="Georgia,serif" font-size="16" letter-spacing="2">FANTASÍA JUVENIL · MUESTRA</text>
+  <text x="44" y="132" fill="#28372c" font-family="Georgia,serif" font-size="34" font-weight="700">El atlas de las</text>
+  <text x="44" y="175" fill="#28372c" font-family="Georgia,serif" font-size="34" font-weight="700">puertas dormidas</text>
+  <text x="300" y="744" fill="#fff8e8" font-family="Georgia,serif" font-size="15" font-weight="700" letter-spacing="1" text-anchor="middle">ESTER LÓPEZ RAMOS · FICHA DE MUESTRA</text>
+</svg>

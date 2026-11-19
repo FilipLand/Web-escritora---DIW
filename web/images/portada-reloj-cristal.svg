@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 780">
+  <defs>
+    <linearGradient id="glass" x2="0" y2="1">
+      <stop stop-color="#b9e2d7"/>
+      <stop offset="1" stop-color="#497e82"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="780" fill="url(#glass)"/>
+  <path d="M0 540 122 421l89 87 111-151 112 139 77-86 89 78v212H0z" fill="#63928c"/>
+  <path d="M0 615 145 510l114 83 105-115 106 88 130-104v238H0z" fill="#315c61"/>
+  <circle cx="300" cy="435" r="142" fill="#d9f0e2" opacity=".9"/>
+  <circle cx="300" cy="435" r="117" fill="#638f8b" stroke="#f3e7ae" stroke-width="12"/>
+  <circle cx="300" cy="435" r="12" fill="#f3e7ae"/>
+  <path d="M300 435V354M300 435l67 42" fill="none" stroke="#f8f2d5" stroke-linecap="round" stroke-width="13"/>
+  <g fill="#f3e7ae">
+    <circle cx="300" cy="338" r="8"/><circle cx="397" cy="435" r="8"/>
+    <circle cx="300" cy="532" r="8"/><circle cx="203" cy="435" r="8"/>
+  </g>
+  <path d="m92 325 40-78 40 78-40 78zM438 313l34-66 34 66-34 66z" fill="#d8f4e6" opacity=".78"/>
+  <rect x="0" y="700" width="600" height="80" fill="#20383b" opacity=".94"/>
+  <rect x="12" y="12" width="576" height="756" fill="none" stroke="#f6f0dc" stroke-width="5"/>
+  <text x="44" y="55" fill="#20383b" font-family="Georgia,serif" font-size="16" letter-spacing="2">FANTASÍA JUVENIL · MUESTRA</text>
+  <text x="44" y="132" fill="#20383b" font-family="Georgia,serif" font-size="39" font-weight="700">El reloj</text>
+  <text x="44" y="178" fill="#20383b" font-family="Georgia,serif" font-size="39" font-weight="700">de cristal</text>
+  <text x="300" y="744" fill="#fff8e8" font-family="Georgia,serif" font-size="15" font-weight="700" letter-spacing="1" text-anchor="middle">ESTER LÓPEZ RAMOS · FICHA DE MUESTRA</text>
+</svg>
